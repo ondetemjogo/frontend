@@ -32,3 +32,11 @@ Navegue até o diretório `web` (pasta contendo o arquivo `package.json`) e exec
 ```
 
 Agora abra o navegador e digite `http:/localhost:8000/`
+
+#### Conteúdos de Apoio
+
+AngularJS `https://www.youtube.com/playlist?list=PLQCmSnNFVYnTD5p2fR4EXmtlR6jQJMbPb`
+
+Bower `https://www.youtube.com/playlist?list=PLQCmSnNFVYnS1vVHVumHKAc8RLcSK-Rl2`
+
+Git `https://www.youtube.com/playlist?list=PLQCmSnNFVYnRdgxOC_ufH58NxlmM6VYd1`
