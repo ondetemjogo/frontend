@@ -21,6 +21,7 @@ Navegue até o diretório `web` (pasta contendo o arquivo `package.json`) e exec
 
 ```JavaScript
 
+  npm install -g bower
   npm install
 
 ```
