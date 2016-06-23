@@ -1,4 +1,4 @@
-# Onde tem jogo? ![Travis CI](https://travis-ci.org/ProjetoChernobyl/ondetemjogo.svg?branch=master)
+# Onde tem jogo? ![Travis CI](https://travis-ci.org/ondetemjogo/ondetemjogo.svg?branch=master)
 
 Clique <a href="https://ondetemjogo.herokuapp.com/" target="_blank">aqui</a> para acessar a plataforma!
 
