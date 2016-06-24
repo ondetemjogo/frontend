@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-- "4.1"
+- '4.1'
 before_install:
 - cd web
 before_script:
@@ -17,7 +17,7 @@ script:
 deploy:
   provider: heroku
   api_key:
-    secure: AAAAB3NzaC1yc2EAAAADAQABAAABAQDuXJVzL5DXT9c4+71Ax76JopYDM4ZfmThOqO0wRFLKeQCo/Y8abWpQ20629oLTDCkFecDrcDMEglvXbULwMRVNFqMERrX2EHrX+WayMMmdOmlBbNhgoNHfvWzl3bKPpIVJQxG9ZO4GuiDgo9Y8N0R9YRmuKXNwcDVeOKZ2nADcUGG3+O42Fb7aUZQ+aeNCBaCFfDPxQZWKZz3UhZWUCuvJwdDXGdlX0ysqBbFkQhDiZ3Jo7P278ucMwY9twcRknGhVKN0WIhao/lPatirwxO8W38YvSuO2/pak8S12KELabQ1HAu0OBWRSJ2hY4ZU+FhpQfZG6ZDbcDohf5u0KJ7sP
+    secure: qkZ+PPiVy1vnU5bvdqrrF6IEbfkB/1a5K3roctkJSwVaxEDp6TC5TiTPTnbGBDN8BCGfSr4g5PsNNlYxXo23RWsCLKHubzDfnvupVTVwfX8M9ITUQGD0AIEH9uM1xIo39cHUkZy5pXmHd+xYJBdiPDXocqmazWVHI5GC+b9FB3T78W3OjDvfnFnYDnau0F9skOM9/nZtzJ1EurqhF0J6jkZcqJmzbBCXHU41aF/DBySSyzI8+b8t1SIG9mJnvCT0XQhRDqHzfPkyqJ3lqBGpZOYJ275cb82fj1nh0ER6Rs7FTaRFpGw04YsAwANHtEr6hYkSBEUncyMbRa6xJIKdtrtaIIm1kOmTeQxGGwOXfBryZ5drJaX5sa7xNBy7/b+4WTMf6E2dsZqR2u9QKB+jMRYGfRvAlhFaVdYfFEFRMwPltNPBI+m4lq9899o2/bjmGRHJPglnKbeYuVm8HYHOy29L8xYsklumGP4MuQFwxaMKt3enSec3PrM4uHoOa+/d4uDyZYmcMZBTawADwJt/PfeQhFcmmyx4Jvu+SFskGqStUiK+g/rBtJm2uK86tbuKY9veLkNyx1Q9t5RS25EwNpuLw2y+yYwJ/FGzOknqank035+QcXLwuXt/JtVU9rWo5yjDogBCBVgd66rPaRCsFHpDv/tCLcvg3gZ09etisJ4=
   app: ondetemjogo
   on:
     repo: ondetemjogo/ondetemjogo
