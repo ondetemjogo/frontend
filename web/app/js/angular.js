@@ -51,3 +51,21 @@ angular.module("ondetemjogo").controller("welcomeController", function ($scope) 
 	    }
 	}).scroll();
 });
+
+angular.module("ondetemjogo").controller("eventController", function($scope, $routeParams) {
+	$scope.events = [
+		{description : "Event 01"},
+		{description : "Event 02"},
+		{description : "Event 03"},
+		{description : "Event 04"},
+		{description : "Event 05"}
+	];
+
+	var self = this;
+
+	self.search = $routeParams.search;
+
+	$scope.filterFunction = function(element) {
+		return element.description.match(/^Ma/) ? true : false;
+	};
+});

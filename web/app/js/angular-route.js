@@ -20,6 +20,12 @@ angular.module("ondetemjogo").config(function ($routeProvider) {
 		controller: "dashboardController"
 	});
 
+	$routeProvider.when("/events/:search", {
+		templateUrl: "view/events.html",
+		controller: "eventController",
+		controllerAs: "eventCtrl"
+	});
+
 	$routeProvider.otherwise({ redirectTo: "/index" });
 
 });
