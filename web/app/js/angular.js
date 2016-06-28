@@ -52,15 +52,7 @@ angular.module("ondetemjogo").controller("welcomeController", function ($scope) 
 	}).scroll();
 });
 
-angular.module("ondetemjogo").controller("eventController", function($scope, $routeParams) {
-	$scope.events = [
-		{description : "Event 01"},
-		{description : "Event 02"},
-		{description : "Event 03"},
-		{description : "Event 04"},
-		{description : "Event 05"}
-	];
-
+angular.module("ondetemjogo").controller("eventController", function($scope, $routeParams, $http) {
 	var self = this;
 
 	self.search = $routeParams.search;
@@ -68,4 +60,33 @@ angular.module("ondetemjogo").controller("eventController", function($scope, $ro
 	$scope.filterFunction = function(element) {
 		return element.description.match(/^Ma/) ? true : false;
 	};
+
+	$http.get("http://localhost:8000/json/events-results.json").success(function(data) {
+		$scope.users = data.results;
+		$("#loader").hide();
+		$("#userList").show();
+	}).error(function(data, status) {
+		alert("Error in get data");
+	});
+
+	$scope.showDetail = function(u) {
+		if ($scope.active != u.username) {
+			$scope.active = u.username;
+		} else {
+			$scope.active = null;
+		}
+	}
+
+	$scope.doPost = function() {
+		$http.get("http://localhost:8000/json/event.json").success(function(data) {
+			var newUser = data.results[0];
+			newUser.user.text = $("#inputText").val();
+			newUser.date = new Date();
+			$scope.users.push(newUser);
+		}).error(function(data, status) {
+			alert("Error in get data");
+		});
+	}
+
+
 });
