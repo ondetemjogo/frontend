@@ -5,17 +5,11 @@ angular.module('ondeTemJogoApp', [])
 		$http.get(url).
 		then(function(response) {
 			$scope.value = response.data;
-			$scope.valor = $scope.value[0];
-		//	console.log($scope.value[0]);
+			// $scope.valor = $scope.value[0];
+			console.log($scope.value[0]);
 
 		});	
 	}
          
 })
-
-.controller('output',function($scope,$http){
-	
-	$scope.name ="Nome da Empresa";
-
-});
 

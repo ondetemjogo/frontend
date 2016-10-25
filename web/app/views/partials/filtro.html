@@ -33,16 +33,16 @@
 	}
 
 </style>
-<div class="container" ng-controller="output">
+<div class="container">
 	<div class="listagem col-xs-12" >
 		<ul class="col-xs-12">
-			<li class="item col-xs-12" >
+			<li class="item col-xs-12" ng-repeat="x in valor | filter:pesquisa">
 				<div class="local col-xs-8">
 					<div class="div-img col-xs-3">
 						<img src="img/chopp.jpg">
 					</div>
 					<div class="col-xs-9">
-						<h3 class="titulo">{{name}}</h3>
+						<h3 class="titulo">{{x.establishmentName}}</h3>
 						<span>teste</span>
 					</div>
 				</div>
