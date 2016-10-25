@@ -1,19 +1,14 @@
 angular.module('ondeTemJogoApp', [])
 .controller('pesquisa', function($scope, $http) {
-    $http.get('http://rest-service.guides.spring.io/greeting').
-        then(function(response) {
-            $scope.greeting = response.data;
-        });
+	$scope.pesquisarString = function(){
 
-        $scope.pesquisarString = function(){
-
-        var url = "https://apiondetemjogo.herokuapp.com/api/v1/search/"+ $scope.pesquisa;
-        console.log(url);
-        
-        
-
-
-        }
+		var url = "https://apiondetemjogo.herokuapp.com/api/v1/search/"+ $scope.pesquisa;
+		$http.get(url).
+		then(function(response) {
+			$scope.value = response.data;
+			console.log($scope.value);
+		});
+	}	
 });
 
 
