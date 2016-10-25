@@ -36,14 +36,14 @@
 <div class="container">
 	<div class="listagem col-xs-12" >
 		<ul class="col-xs-12">
-			<li class="item col-xs-12" ng-repeat="x in valor | filter:pesquisa">
+			<li class="item col-xs-12" ng-repeat="x in value">
 				<div class="local col-xs-8">
 					<div class="div-img col-xs-3">
 						<img src="img/chopp.jpg">
 					</div>
 					<div class="col-xs-9">
 						<h3 class="titulo">{{x.establishmentName}}</h3>
-						<span>teste</span>
+						<span>{{x.establishmentName}}</span>
 					</div>
 				</div>
 				<div class="col-xs-4">
@@ -56,7 +56,7 @@
 							<img class="time fora" src="img/corinthians.png">
 						</div>
 					</div>
-					<span class="col-xs-12">Morumbi, 15/10/16 as 21:40h</span>	
+					<span class="col-xs-12">Morumbi, 15/10/16 as 21:40h</span>
 				</div>
 			</li>
 		</ul>
