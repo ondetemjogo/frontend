@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Onde Tem Jogo</title>
+
+  <script src="js/angular.min.js"></script>
+  <script src="material/material.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="material/material.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.css">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+  <style>
+    .header{
+      background: #82ce0a;
+    }
+    .no-padding{
+      padding-right: 0!important;
+      padding-left: 0!important;
+    }
+  </style>
+</head>
+<body ng-app="">
+
+  <div class="col-xs-12 no-padding">
+    <div class="header_ondeTemJogo">
+      <div class="col-xs-12 header hidden-xs hidden-sm" ng-include="'views/header/header_desktop.html'"></div>
+    </div> 
+
+    <div class="container">
+      <div class="col-xs-12 no-padding" ng-include="'views/partials/filtro.html'"></div>
+    </div>
+
+   <div class="footer">
+     <div class="col-xs-12 no-padding" ng-include="'views/footer/footer.html'"></div>
+   </div>
+  </div>
+  
+</body>
+</html>
