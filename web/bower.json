@@ -1,6 +1,6 @@
 {
   "name": "ondetemjogo",
-  "homepage": "https://github.com/ProjetoChernobyl/ondetemjogo",
+  "homepage": "https://github.com/ondetemjogo/frontend",
   "authors": [
     "Altieres de Matos"
   ],
@@ -20,9 +20,12 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "1.4.8",
-    "angular-mocks": "1.4.8",
-    "angular-route": "1.4.8",
-    "bootstrap": "3.3.6"
+    "font-awesome": "^4.7.0",
+    "bootstrap": "^3.3.7",
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.5.8"
   }
 }
