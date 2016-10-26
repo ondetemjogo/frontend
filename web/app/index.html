@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html ng-app="ondeTemJogoApp">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Onde Tem Jogo</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Onde Tem Jogo</title>
 
   <script src="js/angular.min.js"></script>
   <script src="material/material.js"></script>
   <script src="js/app.js"></script>
   <script src="js/controller.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
 
-
+  
   <link rel="stylesheet" type="text/css" href="material/material.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.css">
   <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <link rel="shortcut icon" href="img/tema.ico"  >
 
   <style>
     .header{
@@ -26,16 +28,19 @@
       padding-right: 0!important;
       padding-left: 0!important;
     }
+    .conteudo{
+      min-height: 600px;
+    }
   </style>
 </head>
-<body>
+<body ng-controller="pesquisa">
 
   <div class="col-xs-12 no-padding" ng-view>
     <div class="header_ondeTemJogo">
       <div class="col-xs-12 header hidden-xs hidden-sm" ng-include="'views/header/header_desktop.html'"></div>
-    </div> 
+    </div>
 
-    <div class="container">
+    <div class="container conteudo">
       <div class="col-xs-12 no-padding" ng-include="'views/partials/filtro.html'"></div>
     </div>
 

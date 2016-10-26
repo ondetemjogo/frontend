@@ -4,14 +4,11 @@
 		<i class="fa fa-futbol-o" aria-hidden="true"></i><span>Onde Tem Jogo</span>
 	</div>
 	<div class="col-xs-3 input_pesquisa">
-		<div class="form-group col-xs-12" ng-controller="pesquisa">
+		<div class="form-group col-xs-12" >
 			<i class="fa fa-search" aria-hidden="true" ng-click="pesquisarString()"></i>
-			<input type="text" class="form-control" id="pesquisa" placeholder="Pesquisa" ng-model="pesquisa">
-			{{value[0].date}}
+			<input type="text" class="form-control" id="pesquisa"  ng-model="model_pesquisa">
 		</div>
-
 	</div>
-
 </div>
 <style>
 	.mdl-textfield{
@@ -24,6 +21,15 @@
 	}
 	.header_desktop .form-group{
 		border-color: #82ce0a;
+	}
+	.header_desktop .form-group .form-control{
+		background-color: transparent;
+		border-left: none;
+		border-right: none;
+		border-top: none;
+		box-shadow: none;
+		color: #fff;
+		border-bottom-color: #fff;
 	}
 	.header_desktop{
 		padding: 11px 0px 0px 0;
@@ -38,6 +44,9 @@
 		right: 8%;
 		top: 14%;
 		font-size: 19px;
-		color: #ddd;
+		color: #fff;
+		cursor: pointer;
 	}
+
+
 </style>

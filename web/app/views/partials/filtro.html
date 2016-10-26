@@ -31,19 +31,28 @@
 	ul {
 		margin-top: 20px;
 	}
+	.listagem .jumbotron .dica{
+		    text-align: center;
+    font-size: 30pt;
+    color: #b1afaf;
+	}
 
 </style>
 <div class="container">
 	<div class="listagem col-xs-12" >
-		<ul class="col-xs-12" ng-controller="pesquisa">
-			<li class="item col-xs-12" >
+		<ul class="col-xs-12">
+            <div class="jumbotron">
+            	<h3 class="dica">Faça sua Pesquisa Jovem !!!! Menino Emocionado</h3>
+            </div>
+		    
+			<li class="item col-xs-12" ng-repeat="x in value">
 				<div class="local col-xs-8">
 					<div class="div-img col-xs-3">
 						<img src="img/chopp.jpg">
 					</div>
 					<div class="col-xs-9">
-						<h3 class="titulo">{{value[0].date}}</h3>
-						<span>{{value[establishmentAddress].establishmentAddress}}</span>
+						<h3 class="titulo">{{x.establishmentName}}</h3>
+						<span>{{x.establishmentAddress}}</span>
 					</div>
 				</div>
 				<div class="col-xs-4">
@@ -56,7 +65,7 @@
 							<img class="time fora" src="img/corinthians.png">
 						</div>
 					</div>
-					<span class="col-xs-12">Morumbi, 15/10/16 as 21:40h</span>	
+					<span class="col-xs-12">Morumbi, {{x.date}} as 21:40h</span>
 				</div>
 			</li>
 		</ul>
