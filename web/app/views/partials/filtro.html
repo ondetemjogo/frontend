@@ -32,19 +32,21 @@
 		margin-top: 20px;
 	}
 	.listagem .jumbotron .dica{
-		    text-align: center;
-    font-size: 30pt;
-    color: #b1afaf;
+		text-align: center;
+		font-size: 30pt;
+		color: #b1afaf;
 	}
 
 </style>
 <div class="container">
 	<div class="listagem col-xs-12" >
 		<ul class="col-xs-12">
-            <div class="jumbotron">
-            	<h3 class="dica">Faça sua Pesquisa Jovem !!!! Menino Emocionado</h3>
-            </div>
-		    
+
+			<div class="jumbotron">
+				<h3 class="dica">Faça sua Pesquisa Jovem !!!! Menino Emocionado</h3>
+			</div>
+			
+
 			<li class="item col-xs-12" ng-repeat="x in value">
 				<div class="local col-xs-8">
 					<div class="div-img col-xs-3">
@@ -52,7 +54,9 @@
 					</div>
 					<div class="col-xs-9">
 						<h3 class="titulo">{{x.establishmentName}}</h3>
+
 						<span>{{x.establishmentAddress}}</span>
+
 					</div>
 				</div>
 				<div class="col-xs-4">
