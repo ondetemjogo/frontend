@@ -2,7 +2,12 @@
   "name": "ondetemjogo",
   "homepage": "https://github.com/ondetemjogo/frontend",
   "authors": [
-    "Altieres de Matos"
+    "@altitdb", 
+    "@joaopaulonunesm",
+    "@LeonardoAndriotti",
+    "@RaulMaia",
+    "@RenatoSoutoMaior",
+    "@RicardoLuizSilveira"
   ],
   "description": "Plataforma Onde Tem Jogo?",
   "main": "",
