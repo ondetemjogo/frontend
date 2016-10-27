@@ -4,7 +4,7 @@
 
 describe("ondetemjogo", function() {
 
-  it('should navigate to login', function() {
+  /*it('should navigate to login', function() {
     browser.get('#/login');
     expect(browser.getLocationAbsUrl()).toMatch("/login");
   });
@@ -12,6 +12,6 @@ describe("ondetemjogo", function() {
   it('should navigate to signup', function() {
     browser.get('#/signup');
     expect(browser.getLocationAbsUrl()).toMatch("/signup");
-  });
+  });*/
 
 });
