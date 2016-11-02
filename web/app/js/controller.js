@@ -1,19 +1,22 @@
-angular.module('ondeTemJogoApp', [])
-.controller('pesquisa', function($scope, $http) {
+'use strict';
 
-	$scope.pesquisarString = function(){
+angular.module('ondeTemJogoApp')
+  .controller('MainController', MainController)
+  .controller('HeaderController', HeaderController);
 
-		$(".jumbotron").css("display", "none");
-        
-        var inputPesquisa = $("#pesquisa").val();
-       
-		var url = "http://apiondetemjogo.herokuapp.com/api/v1/search/" + inputPesquisa;
-		console.log(url);
-		$http.get(url).
-		then(function(response) {
-		  $scope.value	= response.data;
+  function MainController() {
 
-		});
-	}
+  }
 
-})
+  function HeaderController(SearchService) {
+    var vm = this;
+
+    vm.pesquisar = pesquisar;
+
+    function pesquisar(timeDoCoracao) {
+      SearchService.pesquisar(timeDoCoracao)
+        .then(function (response) {
+          vm.value = response;
+        });
+    }
+  }

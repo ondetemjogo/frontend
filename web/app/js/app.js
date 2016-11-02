@@ -1,5 +1,3 @@
 'use strict';
 
-var ondeTemJogo = angular.module('ondeTemJogoApp',[]);
-
-
+angular.module('ondeTemJogoApp',[]);
