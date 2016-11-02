@@ -1,6 +1,7 @@
 # Onde tem jogo? ![Travis CI](https://travis-ci.org/ondetemjogo/frontend.svg?branch=master)
 
-Clique <a href="https://ondetemjogo.herokuapp.com/" target="_blank">aqui</a> para acessar a plataforma!
+
+####Clique <a href="https://ondetemjogo.herokuapp.com/" target="_blank">aqui</a> para acessar a plataforma!
 
 O projeto "Onde Tem Jogo?" é uma plataforma que auxilia na busca de jogos do seu time favorito em bares/lanchonetes.
 Enquanto os usuários podem encontrar o melhor horário e local para se reunir os donos de estabelecimento podem utilizar a plataforma para divulgação de suas marcas atingindo uma infinidade de clientes em potencial.
@@ -8,6 +9,7 @@ Enquanto os usuários podem encontrar o melhor horário e local para se reunir o
 Em resumo desejamos criar **conexões!**     
 colocando as pessoas certas nos lugares certos em um momento específico de suas vidas.
 
+Versão em desenvolvimento ![Travis CI - Develop](https://travis-ci.org/ondetemjogo/frontend.svg?branch=develop)
 
 #### Pré requisitos
 

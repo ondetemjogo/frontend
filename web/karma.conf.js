@@ -8,7 +8,7 @@ module.exports = function(config){
       'lib/angular-mocks/angular-mocks.js',
       'lib/angular-route/angular-route.js',
       'js/app.js',
-	  'js/app-test.js',
+      'js/app-test.js',
       'js/controller.js'
     ],
 

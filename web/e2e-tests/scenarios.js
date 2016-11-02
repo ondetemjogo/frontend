@@ -13,5 +13,4 @@ describe("ondetemjogo", function() {
     //browser.get('#/signup');
     //expect(browser.getLocationAbsUrl()).toMatch("/signup");
   });
-
 });
