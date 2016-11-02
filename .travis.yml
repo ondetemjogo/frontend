@@ -11,8 +11,7 @@ before_script:
 - npm run update-webdriver
 - sleep 1
 script:
-- node_modules/.bin/karma start karma.conf.js --no-auto-watch --single-run --reporters=dots
-  --browsers=Firefox
+- node_modules/.bin/karma start karma.conf.js --no-auto-watch --single-run --reporters=dots --browsers=Firefox
 - node_modules/.bin/protractor e2e-tests/protractor.conf.js --browser=firefox
 deploy:
   provider: heroku
