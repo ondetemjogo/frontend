@@ -1,0 +1,34 @@
+.listagemCadastro {
+	border: 2px solid #000;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+}
+.img-circle{
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	border-radius:50%;
+}
+.dtHoraInformacao {
+	padding-top: 3%;
+}
+.centro{
+	text-align: center;
+}
+.img-center{
+	display: block;
+	margin-left: auto;
+  	margin-right: auto;
+}
+.dadosEstabelecimento{
+	margin-top: 5%;
+}
+body{
+	padding-top: 70px;
+	padding-bottom: 20px;
+}
+.footer{
+	background-color: #e5e5e5;
+}
