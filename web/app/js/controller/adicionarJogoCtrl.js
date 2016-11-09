@@ -1,9 +1,17 @@
 angular.module("ondeTemJogoApp").controller("adicionarJogoCtrl", function ($scope, $state, brasileiraoAPI){
 
+ var obterJogosFases = function (fases){
+	 angular.forEach(fases, function(value, key) {
+		  $scope.dataJogos = value.jogos.data;
+			$scope.idJogos = value.jogos.id;
+		});
+ }
+
 	var carregarDadosBrasileirao = function () {
 		brasileiraoAPI.getAllInformations("2016").then(
 			function (resp) {
-				$scope.dadosBrasileirao = resp.data;
+				obterJogosFases(resp.data.fases);
+				$scope.equipesBrasileirao = resp.data.equipes;
 				console.log(resp);
 			},
 			function (resp){
@@ -12,7 +20,6 @@ angular.module("ondeTemJogoApp").controller("adicionarJogoCtrl", function ($scop
 			}
 		);
 };
-
 
 
 carregarDadosBrasileirao();
