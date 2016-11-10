@@ -30,5 +30,33 @@ body{
 	padding-bottom: 20px;
 }
 .footer{
-	background-color: #e5e5e5;
+	background: #82ce0a;
+}
+.navbar{
+      background: #82ce0a;
+    }
+.navbar-default .navbar-toggle {
+    border-color: white;
+}
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+.navbar-default .navbar-nav>li>a:focus{
+    color: black;
+}
+a.title span{
+	color: white;
+	padding-left: 20px;
+	float:left;
+	font-family: 'Pacifico', cursive;
+	font-size: 20pt;
+}
+.navbar-header {
+    height: 55px;
+}
+a.title i{
+	color: black;
+	font-size: 32px;
+	margin-top: -5px;
+	float:left;
 }

@@ -1,5 +1,12 @@
 angular.module("ondeTemJogoApp").controller("adicionarJogoCtrl", function ($scope, $state, brasileiraoAPI){
 
+  $scope.mytime = new Date();
+
+  $scope.hstep = 1;
+  $scope.mstep = 1;
+
+  $scope.ismeridian = true;
+
  var obterJogosFases = function (fases){
 	 angular.forEach(fases, function(value, key) {
 		  $scope.dataJogos = value.jogos.data;

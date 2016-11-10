@@ -1,5 +1,7 @@
 <div class="container">
-	<div class="listagemCadastro col-xs-12" >
+	<div class="col-xs-2" >
+	</div>
+	<div class="listagemCadastro col-xs-8" >
 		<div class="content times">
 			<div class="col-xs-4 col-sm-5 casaColor">
 				<div class="col-xs-11 col-sm-11">
@@ -41,12 +43,11 @@
 				<div class="form-group">
 				  	<label class="col-md-4 control-label" for="disponivel">À partir</label>
 				  	<div class="col-md-4">
-					  <input id="disponivel" name="disponivel" placeholder="hh:mm" class="form-control input-md" required="" type="text">
-					  <span class="help-block">Horário que ja vai estar no canal do jogo</span>
+					  <div uib-timepicker ng-model="mytime" ng-change="changed()" hour-step="hstep" minute-step="mstep" show-meridian="ismeridian"></div>
 				  	</div>
+					<span class="help-block">Horário que ja vai estar no canal do jogo</span>
 				</div>
 				<div class="col-xs-12 centro">
-					<br/>
 					<div class="btn-group">
 						<button type="button" class="btn btn-success">Salvar</button>
 					</div>
