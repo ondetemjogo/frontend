@@ -1,0 +1,65 @@
+.listagemCadastro {
+	border: 2px solid #000;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+}
+.img-circle{
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	border-radius:50%;
+}
+.dtHoraInformacao {
+	padding-top: 3%;
+}
+.topLabelTime{
+	margin-top: 35px;
+}
+.centro{
+	text-align: center;
+}
+.img-center{
+	display: block;
+	margin-left: auto;
+  	margin-right: auto;
+}
+.dadosEstabelecimento{
+	margin-top: 5%;
+}
+body{
+	padding-top: 70px;
+	padding-bottom: 20px;
+}
+.footer{
+	background: #82ce0a;
+}
+.navbar{
+      background: #82ce0a;
+}
+.navbar-default .navbar-toggle {
+    border-color: white;
+}
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+.navbar-default .navbar-nav>li>a:focus{
+    color: black;
+}
+a.title span{
+	color: white;
+	padding-left: 20px;
+	float:left;
+	font-family: 'Pacifico', cursive;
+	font-size: 20pt;
+}
+.navbar-header {
+    height: 55px;
+}
+a.title i{
+	color: black;
+	font-size: 32px;
+	margin-top: -5px;
+	float:left;
+}

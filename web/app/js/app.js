@@ -1,3 +1,1 @@
-'use strict';
-
-angular.module('ondeTemJogoApp',[]);
+angular.module('ondeTemJogoApp',["ui.router","ngAnimate","ui.bootstrap"]);

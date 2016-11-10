@@ -1,0 +1,59 @@
+<div class="container">
+	<div class="col-xs-2" >
+	</div>
+	<div class="listagemCadastro col-xs-8" >
+		<div>
+			<select ng-model="selectJogo">
+				<option ng-repeat="x in jogosDisponiveis" value="{{$index}}">{{x.data}} às {{x.horario}} - {{x.time1['nome-comum']}} x {{x.time2['nome-comum']}}</option>
+			</select>
+		</div>
+		<div class="content times" ng-show="selectJogo">
+			<div class="col-xs-4 col-sm-5 casaColor">
+				<div class="col-xs-11 col-sm-11">
+					<p>
+						<div>
+							<img class="img-circle img-responsive img-center" src="{{jogosDisponiveis[selectJogo].time1['brasao']}}" alt="Brasao time 1">
+						</div>
+					</p>
+					<div class="centro">{{jogosDisponiveis[selectJogo].time1['nome-comum']}}</div>
+				</div>
+			</div>
+			<div class="col-xs-4 col-sm-2 dtHoraInformacao">
+				<p class="centro">{{jogosDisponiveis[selectJogo].data}}</p>
+				<p class="centro">{{jogosDisponiveis[selectJogo].horario}}</p>
+			</div>
+			<div class="col-xs-4 col-sm-5 visitanteColor">
+				<div class="col-xs-11 col-sm-11">
+					<p>
+					<div>
+						<img class="img-circle img-responsive img-center" src="{{jogosDisponiveis[selectJogo].time2['brasao']}}" alt="Brasao time 2">
+					</div>
+					</p>
+					<div class="centro">{{jogosDisponiveis[selectJogo].time2['nome-comum']}}</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="content col-xs-12 dadosEstabelecimento">
+			<div class="form-horizontal">
+				<div class="form-group">
+				  	<label class="col-md-4 control-label" for="estabelecimento">Estabelecimento</label>
+				  	<div class="col-md-6">
+				  		<input id="estabelecimento" name="estabelecimento" placeholder="" class="form-control input-md" required="" type="text">
+		  			</div>
+	  			</div>
+				<div class="form-group">
+				  	<label class="col-xs-4 control-label topLabelTime" for="disponivel">À partir</label>
+				  	<div class="col-xs-4">
+					  	<div uib-timepicker ng-model="mytime" ng-change="changed()" hour-step="hstep" minute-step="mstep" show-meridian="ismeridian"></div>
+				  	</div>
+				</div>
+				<div class="col-xs-12 centro">
+					<div class="btn-group">
+						<button type="button" class="btn btn-success">Salvar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
