@@ -14,6 +14,9 @@
 .dtHoraInformacao {
 	padding-top: 3%;
 }
+.topLabelTime{
+	margin-top: 35px;
+}
 .centro{
 	text-align: center;
 }
@@ -34,7 +37,7 @@ body{
 }
 .navbar{
       background: #82ce0a;
-    }
+}
 .navbar-default .navbar-toggle {
     border-color: white;
 }
